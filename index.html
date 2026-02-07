@@ -1,0 +1,1819 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="VOW Server - أفضل سيرفر ديسكورد عربي للاعبين PC. انضم لمجتمع الجيمرز العرب وابحث عن زملاء اللعب في جميع ألعابك المفضلة. سيرفر قيمنق عربي نشط 24/7 مع بوتات موسيقى ورومات صوتية مميزة.">
+    <meta name="keywords" content="ديسكورد عربي, سيرفر ديسكورد عربي, discord عربي, سيرفر قيمنق عربي, العاب عربي, PC gaming عربي, VOW Server, gaming community عربي">
+    <meta name="author" content="VOW Server">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_SA">
+    <meta property="og:site_name" content="VOW Server">
+    <meta property="og:title" content="VOW Server - أفضل سيرفر ديسكورد عربي للاعبين">
+    <meta property="og:description" content="انضم لأفضل سيرفر ديسكورد عربي للاعبين! مجتمع نشط 24/7">
+    <meta property="og:image"content="1769680899839.png">
+    
+    <title>VOW Server - أفضل سيرفر ديسكورد عربي للاعبين PC 2026</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Root Variables - Dark Mode (Default) */
+        :root {
+            --primary: #5865F2;
+            --primary-dark: #4752C4;
+            --secondary: #EB459E;
+            --accent: #FEE75C;
+            --bg-main: #0F0F1E;
+            --bg-light: #1A1A2E;
+            --bg-lighter: #2D2D44;
+            --text-main: #FFFFFF;
+            --text-muted: #B9BBBE;
+            --success: #57F287;
+            --shadow: rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Light Mode Variables */
+        [data-theme="light"] {
+            --bg-main: #F5F5F5;
+            --bg-light: #FFFFFF;
+            --bg-lighter: #E8E8E8;
+            --text-main: #1A1A2E;
+            --text-muted: #666666;
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: var(--bg-main);
+            color: var(--text-main);
+            overflow-x: hidden;
+            line-height: 1.6;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Animated Background */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.15;
+            background: 
+                radial-gradient(circle at 20% 50%, var(--primary) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, var(--secondary) 0%, transparent 50%),
+                radial-gradient(circle at 40% 20%, var(--accent) 0%, transparent 50%);
+            animation: bgMove 20s ease-in-out infinite;
+        }
+        
+        @keyframes bgMove {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(50px, 50px) scale(1.1); }
+        }
+        
+        /* Header Controls */
+        .header-controls {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 1001;
+        }
+        
+        .control-btn {
+            background: var(--bg-light);
+            border: 2px solid var(--bg-lighter);
+            color: var(--text-main);
+            padding: 10px 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px var(--shadow);
+        }
+        
+        .control-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px var(--shadow);
+            border-color: var(--primary);
+        }
+        
+        .lang-btn {
+            font-size: 14px;
+            font-weight: 700;
+            padding: 10px 18px;
+        }
+        
+        /* Sponsor Badge */
+        .sponsor-badge {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: linear-gradient(135deg, rgba(88, 101, 242, 0.95), rgba(117, 75, 196, 0.95));
+            padding: 12px 20px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(88, 101, 242, 0.4);
+            z-index: 1000;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .sponsor-badge:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(88, 101, 242, 0.6);
+        }
+        
+        .sponsor-badge-text {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 600;
+        }
+        
+        .sponsor-badge-name {
+            font-size: 16px;
+            color: white;
+            font-weight: 800;
+            font-family: 'Tajawal', sans-serif;
+        }
+        
+        /* Header */
+        header {
+            padding: 25px 0;
+            position: sticky;
+            top: 0;
+            background: var(--bg-main);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            border-bottom: 2px solid var(--bg-lighter);
+            box-shadow: 0 2px 10px var(--shadow);
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 28px;
+            font-weight: 900;
+            color: var(--text-main);
+            text-decoration: none;
+        }
+        
+        .logo-img {
+            width: 55px;
+            height: 55px;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: 0 0 20px rgba(88, 101, 242, 0.5);
+        }
+        
+        .nav-btn {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 14px 35px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(88, 101, 242, 0.4);
+        }
+        
+        .nav-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(88, 101, 242, 0.6);
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 80px 0 120px;
+            text-align: center;
+        }
+        
+        .hero-banner {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto 40px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px var(--shadow);
+            animation: fadeInUp 1s ease;
+        }
+        
+        .hero-banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInUp 1s ease 0.2s both;
+            font-family: 'Tajawal', sans-serif;
+        }
+        
+        .hero p {
+            font-size: 24px;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto 40px;
+            animation: fadeInUp 1s ease 0.4s both;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease 0.6s both;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 20px 50px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(88, 101, 242, 0.4);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(88, 101, 242, 0.6);
+        }
+        
+        .btn-secondary {
+            background: var(--bg-lighter);
+            color: var(--text-main);
+            padding: 20px 50px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            border: 2px solid var(--bg-lighter);
+        }
+        
+        .btn-secondary:hover {
+            border-color: var(--primary);
+            background: rgba(88, 101, 242, 0.1);
+        }
+        
+        /* Stats Section */
+        .stats {
+            padding: 60px 0;
+            background: var(--bg-light);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+        
+        .stat-card {
+            padding: 40px 20px;
+            background: var(--bg-main);
+            border-radius: 15px;
+            border: 1px solid var(--bg-lighter);
+            transition: all 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(88, 101, 242, 0.3);
+        }
+        
+        .stat-number {
+            font-size: 48px;
+            font-weight: 900;
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-family: 'Tajawal', sans-serif;
+        }
+        
+        .stat-label {
+            font-size: 18px;
+            color: var(--text-muted);
+        }
+        
+        /* Section Title */
+        .section-title {
+            text-align: center;
+            font-size: 42px;
+            font-weight: 900;
+            margin-bottom: 60px;
+            font-family: 'Tajawal', sans-serif;
+            color: var(--text-main);
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 20px;
+            color: var(--text-muted);
+            margin-top: -40px;
+            margin-bottom: 50px;
+        }
+        
+        /* Discord Widget Section */
+        .discord-widget-section {
+            padding: 100px 0;
+            background: var(--bg-main);
+        }
+        
+        .widget-container {
+            display: flex;
+            gap: 60px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        
+        .widget-container iframe {
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(88, 101, 242, 0.3);
+            border: 1px solid var(--bg-lighter);
+        }
+        
+        .widget-info {
+            max-width: 500px;
+        }
+        
+        .widget-info h3 {
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 15px;
+            font-family: 'Tajawal', sans-serif;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .widget-info p {
+            font-size: 18px;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+        
+        .widget-features {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .widget-feature {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 18px;
+            padding: 12px;
+            background: rgba(88, 101, 242, 0.05);
+            border-radius: 10px;
+            border: 1px solid rgba(88, 101, 242, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .widget-feature:hover {
+            background: rgba(88, 101, 242, 0.1);
+            border-color: var(--primary);
+            transform: translateX(-5px);
+        }
+        
+        .feature-emoji {
+            font-size: 24px;
+        }
+        
+        /* Popular Games Section */
+        .popular-games {
+            padding: 100px 0;
+            background: var(--bg-light);
+        }
+        
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .game-card {
+            background: var(--bg-main);
+            padding: 25px 20px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid var(--bg-lighter);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .game-emoji {
+            font-size: 70px;
+            margin-bottom: 15px;
+            filter: drop-shadow(0 4px 12px rgba(88, 101, 242, 0.4));
+            transition: all 0.3s ease;
+        }
+        
+        .game-card:hover .game-emoji {
+            transform: scale(1.15);
+            filter: drop-shadow(0 6px 20px rgba(88, 101, 242, 0.6));
+        }
+        
+        .game-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(88, 101, 242, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .game-card:hover::before {
+            left: 100%;
+        }
+        
+        .game-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--primary);
+            box-shadow: 0 15px 40px rgba(88, 101, 242, 0.3);
+        }
+        
+        .game-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-main);
+            line-height: 1.3;
+        }
+        
+        .game-card p {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        
+        .details-btn {
+            margin-top: 10px;
+            padding: 8px 20px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        .details-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(88, 101, 242, 0.4);
+        }
+        
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+            animation: fadeIn 0.3s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .modal-content {
+            background: var(--bg-light);
+            margin: 5% auto;
+            padding: 0;
+            border: 2px solid var(--primary);
+            border-radius: 20px;
+            width: 90%;
+            max-width: 600px;
+            max-height: 85vh;
+            overflow-y: auto;
+            position: relative;
+            animation: slideDown 0.3s ease;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+        
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        .modal-header {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 20px 25px;
+            border-radius: 18px 18px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .modal-header h2 {
+            margin: 0;
+            font-size: 24px;
+            font-family: 'Tajawal', sans-serif;
+        }
+        
+        .close {
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            line-height: 1;
+        }
+        
+        .close:hover {
+            color: var(--accent);
+            transform: rotate(90deg);
+        }
+        
+        .modal-body {
+            padding: 25px;
+            color: var(--text-main);
+        }
+        
+        .modal-body img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .game-detail-item {
+            margin-bottom: 15px;
+            padding: 12px;
+            background: var(--bg-main);
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .game-detail-item strong {
+            color: var(--primary);
+            font-weight: 700;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .game-detail-item p {
+            margin: 0;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+        
+        .game-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(88, 101, 242, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .game-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-main);
+            line-height: 1.3;
+        }
+        
+        .game-card p {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 100px 0;
+            background: var(--bg-main);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .feature-card {
+            background: var(--bg-light);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid var(--bg-lighter);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 40px rgba(88, 101, 242, 0.3);
+        }
+        
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .feature-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+        
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        
+        /* CTA Section */
+        .cta {
+            padding: 100px 0;
+            text-align: center;
+            background: var(--bg-light);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
+            opacity: 0.1;
+            animation: rotateBg 30s linear infinite;
+        }
+        
+        @keyframes rotateBg {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta h2 {
+            font-size: 48px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            font-family: 'Tajawal', sans-serif;
+            color: var(--text-main);
+        }
+        
+        .cta p {
+            font-size: 22px;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            background: var(--bg-main);
+            text-align: center;
+            border-top: 1px solid var(--bg-lighter);
+        }
+        
+        .footer-content {
+            color: var(--text-muted);
+        }
+        
+        .footer-content p {
+            margin-bottom: 10px;
+        }
+        
+        .footer-content a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-content a:hover {
+            color: var(--secondary);
+        }
+        
+        .discord-icon {
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+        }
+        
+        /* Mobile Responsive - Enhanced */
+        @media (max-width: 768px) {
+            .header-controls {
+                top: 15px;
+                right: 15px;
+                gap: 8px;
+            }
+            
+            .control-btn {
+                padding: 12px 16px;
+                font-size: 20px;
+            }
+            
+            .lang-btn {
+                font-size: 16px;
+                padding: 12px 20px;
+            }
+            
+            .sponsor-badge {
+                top: 15px;
+                left: 15px;
+                padding: 10px 16px;
+            }
+            
+            .sponsor-badge-text {
+                font-size: 11px;
+            }
+            
+            .sponsor-badge-name {
+                font-size: 14px;
+            }
+            
+            header {
+                padding: 20px 0;
+            }
+            
+            .logo {
+                font-size: 22px;
+            }
+            
+            .logo-img {
+                width: 45px;
+                height: 45px;
+            }
+            
+            .nav-btn {
+                padding: 12px 24px;
+                font-size: 16px;
+            }
+            
+            .hero {
+                padding: 50px 0 70px;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+                line-height: 1.2;
+            }
+            
+            .hero p {
+                font-size: 18px;
+                line-height: 1.6;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .btn-primary, .btn-secondary {
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+                padding: 18px 35px;
+                font-size: 18px;
+            }
+            
+            .section-title {
+                font-size: 32px;
+                line-height: 1.3;
+                margin-bottom: 40px;
+            }
+            
+            .section-subtitle {
+                font-size: 18px;
+                margin-bottom: 35px;
+            }
+            
+            .stats {
+                padding: 50px 0;
+            }
+            
+            .stat-card {
+                padding: 35px 20px;
+            }
+            
+            .stat-number {
+                font-size: 42px;
+            }
+            
+            .stat-label {
+                font-size: 16px;
+            }
+            
+            .discord-widget-section,
+            .popular-games,
+            .features,
+            .cta {
+                padding: 70px 0;
+            }
+            
+            .widget-container {
+                flex-direction: column;
+                gap: 40px;
+            }
+            
+            .widget-container iframe {
+                width: 100%;
+                max-width: 350px;
+            }
+            
+            .widget-info h3 {
+                font-size: 28px;
+            }
+            
+            .widget-info p {
+                font-size: 17px;
+            }
+            
+            .widget-feature {
+                font-size: 16px;
+                padding: 12px;
+            }
+            
+            .games-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+            
+            .game-card {
+                padding: 20px 15px;
+            }
+            
+            .game-emoji {
+                font-size: 56px;
+            }
+            
+            .game-card h3 {
+                font-size: 15px;
+                margin-bottom: 5px;
+            }
+            
+            .game-card p {
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
+            
+            .details-btn {
+                padding: 7px 18px;
+                font-size: 13px;
+            }
+            
+            .features-grid {
+                gap: 25px;
+            }
+            
+            .feature-card {
+                padding: 35px 25px;
+            }
+            
+            .feature-icon {
+                font-size: 44px;
+            }
+            
+            .feature-card h3 {
+                font-size: 22px;
+            }
+            
+            .feature-card p {
+                font-size: 16px;
+            }
+            
+            .cta h2 {
+                font-size: 32px;
+                line-height: 1.3;
+            }
+            
+            .cta p {
+                font-size: 18px;
+            }
+            
+            footer {
+                padding: 35px 0;
+            }
+            
+            .footer-content p {
+                font-size: 15px;
+            }
+        }
+        
+        /* Extra Small Devices */
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .control-btn {
+                padding: 10px 12px;
+                font-size: 18px;
+            }
+            
+            .lang-btn {
+                font-size: 14px;
+                padding: 10px 16px;
+            }
+            
+            .hero h1 {
+                font-size: 30px;
+            }
+            
+            .hero p {
+                font-size: 16px;
+            }
+            
+            .btn-primary, .btn-secondary {
+                padding: 16px 28px;
+                font-size: 16px;
+            }
+            
+            .section-title {
+                font-size: 28px;
+            }
+            
+            .games-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+            
+            .game-card {
+                padding: 18px 12px;
+            }
+            
+            .game-emoji {
+                font-size: 48px;
+            }
+            
+            .game-card h3 {
+                font-size: 14px;
+            }
+            
+            .game-card p {
+                font-size: 12px;
+            }
+            
+            .details-btn {
+                padding: 6px 16px;
+                font-size: 12px;
+            }
+        }
+        
+        /* Hidden class for language switching */
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="bg-animation"></div>
+    
+    <!-- Header Controls (Theme & Language) -->
+    <div class="header-controls">
+        <button class="control-btn" id="themeToggle" onclick="toggleTheme()" title="تبديل الوضع">
+            <span id="themeIcon">🌙</span>
+        </button>
+        <button class="control-btn lang-btn" onclick="toggleLanguage()">
+            <span id="langText">EN</span>
+        </button>
+    </div>
+    
+    <!-- Sponsor Badge -->
+    <a href="https://discord.gg/R7qq7UJD2Q" class="sponsor-badge" target="_blank">
+        <div>
+            <div class="sponsor-badge-text" data-ar="برعاية" data-en="Sponsored by">برعاية</div>
+            <div class="sponsor-badge-name">⚡ TOP Store</div>
+        </div>
+    </a>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <img src="logo.png" alt="VOW Server Logo" class="logo-img">
+                    <span>VOW Server</span>
+                </a>
+                <a href="https://discord.gg/FBCWebefnV" class="nav-btn" target="_blank">
+                    <span data-ar="انضم الآن" data-en="Join Now">انضم الآن</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-banner">
+                <img src="banner.png" alt="VOW Server Banner">
+            </div>
+            
+            <h1 data-ar="مرحباً بك في VOW Server" data-en="Welcome to VOW Server">مرحباً بك في VOW Server</h1>
+            <p data-ar="سيرفر ديسكورد للاعبين PC! ابحث عن زملاء اللعب وكوّن صداقات جديدة في مجتمع الجيمرز" data-en="Discord server for PC gamers! Find teammates and make new friends in the gaming community">سيرفر ديسكورد للاعبين PC! ابحث عن زملاء اللعب وكوّن صداقات جديدة في مجتمع الجيمرز</p>
+            
+            <div class="hero-buttons">
+                <a href="https://discord.gg/FBCWebefnV" class="btn-primary" target="_blank">
+                    <svg class="discord-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36" fill="currentColor">
+                        <path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/>
+                    </svg>
+                    <span data-ar="انضم للديسكورد" data-en="Join Discord">انضم للديسكورد</span>
+                </a>
+                <a href="https://discord.gg/FBCWebefnV" class="btn-secondary" target="_blank">
+                    <span data-ar="اعرف المزيد عن السيرفر" data-en="Learn More">اعرف المزيد عن السيرفر</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label" data-ar="سيرفر نشط" data-en="Active Server">سيرفر نشط</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">🎮</div>
+                    <div class="stat-label" data-ar="جميع الألعاب" data-en="All Games">جميع الألعاب</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">🌍</div>
+                    <div class="stat-label" data-ar="مجتمع عربي" data-en="Arabic Community">مجتمع عربي</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Discord Widget Section -->
+    <section class="discord-widget-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span data-ar="السيرفر الآن" data-en="Server Now">السيرفر الآن</span>
+                <span style="color: #57F287;">🟢</span>
+            </h2>
+            <div class="widget-container">
+                <iframe src="https://discord.com/widget?id=1449126875925581877&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                <div class="widget-info">
+                    <h3 data-ar="شاهد من نشط الآن!" data-en="See Who's Online!">شاهد من نشط الآن!</h3>
+                    <p data-ar="تقدر تشوف الأعضاء الأونلاين مباشرة وتنضم للسيرفر بضغطة زر" data-en="You can see online members live and join the server with one click">تقدر تشوف الأعضاء الأونلاين مباشرة وتنضم للسيرفر بضغطة زر</p>
+                    <p style="font-size: 14px; color: var(--text-muted); margin-top: -15px; margin-bottom: 20px;" data-ar="* العداد يشمل الأعضاء والبوتات" data-en="* Counter includes members and bots">* العداد يشمل الأعضاء والبوتات</p>
+                    <div class="widget-features">
+                        <div class="widget-feature">
+                            <span class="feature-emoji">👥</span>
+                            <span data-ar="أعضاء نشطين 24/7" data-en="Active Members 24/7">أعضاء نشطين 24/7</span>
+                        </div>
+                        <div class="widget-feature">
+                            <span class="feature-emoji">🎤</span>
+                            <span data-ar="رومات صوتية حية" data-en="Live Voice Rooms">رومات صوتية حية</span>
+                        </div>
+                        <div class="widget-feature">
+                            <span class="feature-emoji">⚡</span>
+                            <span data-ar="انضم بثانية واحدة" data-en="Join in One Second">انضم بثانية واحدة</span>
+                        </div>
+                    </div>
+                    <a href="https://discord.gg/FBCWebefnV" class="btn-primary" target="_blank" style="margin-top: 20px; display: inline-flex;">
+                        <svg class="discord-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36" fill="currentColor">
+                            <path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/>
+                        </svg>
+                        <span data-ar="انضم للسيرفر الآن" data-en="Join Server Now">انضم للسيرفر الآن</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+ <!-- Popular Games Section -->
+<section class="popular-games">
+    <div class="container">
+        <h2 class="section-title"
+            data-ar="الألعاب الشائعة في السيرفر 🎮"
+            data-en="Popular Games on Server 🎮">
+            الألعاب الشائعة في السيرفر 🎮
+        </h2>
+
+        <p class="section-subtitle"
+           data-ar="انضم لمئات اللاعبين في ألعابك المفضلة"
+           data-en="Join hundreds of players in your favorite games">
+           انضم لمئات اللاعبين في ألعابك المفضلة
+        </p>
+
+        <div class="games-grid">
+
+            <div class="game-card">
+                <div class="game-emoji">🔫</div>
+                <h3>GTA V Online</h3>
+                <p>Grand Theft Auto V</p>
+                <button class="details-btn" onclick="showGameDetails('gta5')">
+                    <span data-ar="تفاصيل" data-en="Details">تفاصيل</span>
+                </button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-emoji">🤠</div>
+                <h3>Red Dead Redemption 2</h3>
+                <p data-ar="قصة وأونلاين" data-en="Story & Online">قصة وأونلاين</p>
+                <button class="details-btn" onclick="showGameDetails('rdr2')">
+                    <span data-ar="تفاصيل" data-en="Details">تفاصيل</span>
+                </button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-emoji">🧟</div>
+                <h3>Dead by Daylight</h3>
+                <p>Horror Survival</p>
+                <button class="details-btn" onclick="showGameDetails('dbd')">
+                    <span data-ar="تفاصيل" data-en="Details">تفاصيل</span>
+                </button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-emoji">🏝️</div>
+                <h3>Fortnite</h3>
+                <p>Battle Royale</p>
+                <button class="details-btn" onclick="showGameDetails('fortnite')">
+                    <span data-ar="تفاصيل" data-en="Details">تفاصيل</span>
+                </button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-emoji">🎖️</div>
+                <h3>Call of Duty</h3>
+                <p>FPS Action</p>
+                <button class="details-btn" onclick="showGameDetails('cod')">
+                    <span data-ar="تفاصيل" data-en="Details">تفاصيل</span>
+                </button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-emoji">🎮</div>
+                <h3>Minecraft</h3>
+                <p data-ar="البقاء والإبداع" data-en="Survival & Creative">البقاء والإبداع</p>
+                <button class="details-btn" onclick="showGameDetails('minecraft')">
+                    <span data-ar="تفاصيل" data-en="Details">تفاصيل</span>
+                </button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-emoji">🦖</div>
+                <h3>ARK</h3>
+                <p>Survival Evolved</p>
+                <button class="details-btn" onclick="showGameDetails('ark')">
+                    <span data-ar="تفاصيل" data-en="Details">تفاصيل</span>
+                </button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-emoji">⚔️</div>
+                <h3>Rust</h3>
+                <p>Survival PvP</p>
+                <button class="details-btn" onclick="showGameDetails('rust')">
+                    <span data-ar="تفاصيل" data-en="Details">تفاصيل</span>
+                </button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-emoji">🏭</div>
+                <h3>Satisfactory</h3>
+                <p>Factory Building</p>
+                <button class="details-btn" onclick="showGameDetails('satisfactory')">
+                    <span data-ar="تفاصيل" data-en="Details">تفاصيل</span>
+                </button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-emoji">🥊</div>
+                <h3>Tekken 7 & 8</h3>
+                <p>Fighting Games</p>
+                <button class="details-btn" onclick="showGameDetails('tekken')">
+                    <span data-ar="تفاصيل" data-en="Details">تفاصيل</span>
+                </button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-emoji">🕹️</div>
+                <h3>Among Us</h3>
+                <p>Social Deduction</p>
+                <button class="details-btn" onclick="showGameDetails('amongus')">
+                    <span data-ar="تفاصيل" data-en="Details">تفاصيل</span>
+                </button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-emoji">🎭</div>
+                <h3>VRChat</h3>
+                <p>Virtual Reality</p>
+                <button class="details-btn" onclick="showGameDetails('vrchat')">
+                    <span data-ar="تفاصيل" data-en="Details">تفاصيل</span>
+                </button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-emoji">🔦</div>
+                <h3>The Dark Pictures</h3>
+                <p data-ar="مغامرات رعب" data-en="Horror Adventures">مغامرات رعب</p>
+                <button class="details-btn" onclick="showGameDetails('darkpictures')">
+                    <span data-ar="تفاصيل" data-en="Details">تفاصيل</span>
+                </button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-emoji">🌑</div>
+                <h3>Five Nights at Freddy's</h3>
+                <p>FNAF Series</p>
+                <button class="details-btn" onclick="showGameDetails('fnaf')">
+                    <span data-ar="تفاصيل" data-en="Details">تفاصيل</span>
+                </button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-emoji">💥</div>
+                <h3>Battlefield 2042</h3>
+                <p>FPS Warfare</p>
+                <button class="details-btn" onclick="showGameDetails('battlefield')">
+                    <span data-ar="تفاصيل" data-en="Details">تفاصيل</span>
+                </button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-emoji">🎯</div>
+                <h3>Ready or Not</h3>
+                <p>Tactical FPS</p>
+                <button class="details-btn" onclick="showGameDetails('readyornot')">
+                    <span data-ar="تفاصيل" data-en="Details">تفاصيل</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+                
+    
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title" data-ar="ليش تنضم لـ VOW Server؟" data-en="Why Join VOW Server?">ليش تنضم لـ VOW Server؟</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3 data-ar="ابحث عن زملاء اللعب" data-en="Find Teammates">ابحث عن زملاء اللعب</h3>
+                    <p data-ar="عندك لعبة وما عندك أحد يلعب معك؟ في VOW Server راح تلقى لاعبين لجميع الألعاب الشهيرة!" data-en="Have a game but no one to play with? In VOW Server you'll find players for all popular games!">عندك لعبة وما عندك أحد يلعب معك؟ في VOW Server راح تلقى لاعبين لجميع الألعاب الشهيرة!</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3 data-ar="مجتمع نشط" data-en="Active Community">مجتمع نشط</h3>
+                    <p data-ar="مجتمع عربي نشط من اللاعبين المحترفين والهواة. كل واحد يلقى مكانه عندنا!" data-en="Active Arabic community of pro and casual players. Everyone finds their place with us!">مجتمع عربي نشط من اللاعبين المحترفين والهواة. كل واحد يلقى مكانه عندنا!</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎵</div>
+                    <h3 data-ar="بوتات موسيقى وترفيه" data-en="Music & Entertainment Bots">بوتات موسيقى وترفيه</h3>
+                    <p data-ar="استمتع بأفضل بوتات الموسيقى في الرومات الصوتية مع تفاعل رهيب وأجواء حماسية!" data-en="Enjoy the best music bots in voice rooms with amazing interaction and exciting vibes!">استمتع بأفضل بوتات الموسيقى في الرومات الصوتية مع تفاعل رهيب وأجواء حماسية!</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎤</div>
+                    <h3 data-ar="غرف صوتية مميزة" data-en="Premium Voice Rooms">غرف صوتية مميزة</h3>
+                    <p data-ar="رومات صوتية بجودة عالية مع بوتات ميوزك وتفاعل رهيب! العب واستمع للموسيقى بنفس الوقت!" data-en="High-quality voice rooms with music bots and amazing interaction! Play and listen to music at the same time!">رومات صوتية بجودة عالية مع بوتات ميوزك وتفاعل رهيب! العب واستمع للموسيقى بنفس الوقت!</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 data-ar="إدارة محترفة" data-en="Professional Management">إدارة محترفة</h3>
+                    <p data-ar="فريق إدارة متواجد 24/7 لحماية السيرفر وتنظيمه وضمان تجربة آمنة ومريحة!" data-en="Management team available 24/7 to protect and organize the server and ensure a safe and comfortable experience!">فريق إدارة متواجد 24/7 لحماية السيرفر وتنظيمه وضمان تجربة آمنة ومريحة!</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3 data-ar="تواصل ونقاشات" data-en="Communication & Discussions">تواصل ونقاشات</h3>
+                    <p data-ar="ناقش آخر الأخبار، شارك استراتيجياتك، واتعرف على أصدقاء جدد من نفس اهتماماتك!" data-en="Discuss latest news, share your strategies, and meet new friends with the same interests!">ناقش آخر الأخبار، شارك استراتيجياتك، واتعرف على أصدقاء جدد من نفس اهتماماتك!</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎬</div>
+                    <h3 data-ar="مشاهدة أفلام وأنمي" data-en="Watch Movies & Anime">مشاهدة أفلام وأنمي</h3>
+                    <p data-ar="استمتع بمشاهدة الأفلام والأنمي مع الأصدقاء في رومات مخصصة مع تفاعل مباشر!" data-en="Enjoy watching movies and anime with friends in dedicated rooms with live interaction!">استمتع بمشاهدة الأفلام والأنمي مع الأصدقاء في رومات مخصصة مع تفاعل مباشر!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-ar="جاهز تنضم للمغامرة؟" data-en="Ready to Join the Adventure?">جاهز تنضم للمغامرة؟</h2>
+                <p data-ar="انضم لمئات اللاعبين في VOW Server واستمتع بتجربة قيمنق رهيبة مع بوتات موسيقى وتفاعل مميز!" data-en="Join hundreds of players in VOW Server and enjoy an amazing gaming experience with music bots and special interaction!">انضم لمئات اللاعبين في VOW Server واستمتع بتجربة قيمنق رهيبة مع بوتات موسيقى وتفاعل مميز!</p>
+                <a href="https://discord.gg/FBCWebefnV" class="btn-primary" target="_blank">
+                    <svg class="discord-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36" fill="currentColor">
+                        <path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/>
+                    </svg>
+                    <span data-ar="انضم الآن" data-en="Join Now">انضم الآن</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p data-ar="© 2026 VOW Server. جميع الحقوق محفوظة." data-en="© 2026 VOW Server. All rights reserved.">© 2026 VOW Server. جميع الحقوق محفوظة.</p>
+                <p>
+                    <span data-ar="سيرفر ديسكورد عربي للاعبين PC" data-en="Arabic Discord Server for PC Gamers">سيرفر ديسكورد عربي للاعبين PC</span>
+                    | <a href="https://discord.gg/FBCWebefnV" target="_blank" data-ar="انضم للديسكورد" data-en="Join Discord">انضم للديسكورد</a>
+                </p>
+                <p style="margin-top: 15px; color: #8B8B9D;">
+                    <span data-ar="صُمم وطُور بواسطة" data-en="Designed & Developed by">صُمم وطُور بواسطة</span>
+                    <a href="https://discord.gg/R7qq7UJD2Q" target="_blank" style="color: var(--primary); font-weight: 600;">TOP Store</a>
+                    <span style="margin: 0 8px;">•</span>
+                    <span data-ar="تنفيذ" data-en="Executed by">تنفيذ</span>
+                    <a href="https://discord.com/users/fv6." target="_blank" style="color: var(--secondary); font-weight: 600;">fv6.</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Game Details Modal -->
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalGameTitle"></h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body" id="modalGameBody">
+                <!-- Content will be dynamically inserted -->
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Game Details Data
+        const gamesData = {
+            gta5: {
+                title: 'GTA V Online',
+                titleEn: 'GTA V Online',
+                image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg',
+                players: '1-30 لاعب',
+                playersEn: '1-30 Players',
+                mode: 'Open World، Multiplayer، Co-op',
+                modeEn: 'Open World, Multiplayer, Co-op',
+                description: 'تجربة عالم مفتوح ضخمة مع مهام جماعية، سباقات، وأنشطة متنوعة. انضم للعصابات واسرق البنوك!',
+                descriptionEn: 'Massive open-world experience with co-op missions, races, and various activities. Join gangs and rob banks!',
+                howToPlay: 'كوّن فريقك وابدأ المهمات الجماعية، أو استمتع بالسباقات والأنشطة الحرة في لوس سانتوس',
+                howToPlayEn: 'Form your team and start co-op missions, or enjoy races and free roaming in Los Santos'
+            },
+            rdr2: {
+                title: 'Red Dead Redemption 2',
+                titleEn: 'Red Dead Redemption 2',
+                image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg',
+                players: '1-32 لاعب',
+                playersEn: '1-32 Players',
+                mode: 'قصة منفردة + Online Multiplayer',
+                modeEn: 'Story Mode + Online Multiplayer',
+                description: 'عش حياة الغرب الأمريكي في عالم مفتوح واسع. استكشف، اصطاد، وكوّن عصابتك الخاصة!',
+                descriptionEn: 'Live the American Wild West in a vast open world. Explore, hunt, and form your own gang!',
+                howToPlay: 'العب القصة منفرداً أو انضم للأونلاين لتكوين عصابتك ومواجهة لاعبين آخرين',
+                howToPlayEn: 'Play story solo or join online to form your gang and face other players'
+            },
+            dbd: {
+                title: 'Dead by Daylight',
+                titleEn: 'Dead by Daylight',
+                image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/381210/header.jpg',
+                players: '1v4 (5 لاعبين)',
+                playersEn: '1v4 (5 Players)',
+                mode: 'Asymmetric Horror',
+                modeEn: 'Asymmetric Horror',
+                description: 'لعبة رعب 4 ضد 1! كن قاتلاً أو ناجياً في تجربة رعب مثيرة',
+                descriptionEn: '4v1 horror game! Be a killer or survivor in an intense horror experience',
+                howToPlay: 'كناجي: هرّب واصلح المولدات. كقاتل: اصطد الناجين قبل هروبهم',
+                howToPlayEn: 'As survivor: Escape and fix generators. As killer: Hunt survivors before they escape'
+            },
+            fortnite: {
+                title: 'Fortnite',
+                titleEn: 'Fortnite',
+                image: 'https://cdn-0001.qstv.on.epicgames.com/wBPkaqKlCcHOPEXoim/image/landscape_comp_s.jpeg',
+                players: '1-100 لاعب',
+                playersEn: '1-100 Players',
+                mode: 'Battle Royale، Creative',
+                modeEn: 'Battle Royale, Creative',
+                description: 'باتل رويال مجاني! ابني، قاتل، كن آخر واحد واقف من بين 100 لاعب',
+                descriptionEn: 'Free Battle Royale! Build, fight, be the last one standing among 100 players',
+                howToPlay: 'انزل من الباص، اجمع أسلحة، ابني تحصينات، وكن الفائز الأخير',
+                howToPlayEn: 'Drop from the bus, collect weapons, build fortifications, and be the last winner'
+            },
+            cod: {
+                title: 'Call of Duty',
+                titleEn: 'Call of Duty',
+                image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/header.jpg',
+                players: '2-150 لاعب',
+                playersEn: '2-150 Players',
+                mode: 'FPS Multiplayer، Warzone',
+                modeEn: 'FPS Multiplayer, Warzone',
+                description: 'أشهر سلسلة FPS! استمتع بأوضاع متعددة من Team Deathmatch إلى Battle Royale',
+                descriptionEn: 'Most famous FPS series! Enjoy multiple modes from Team Deathmatch to Battle Royale',
+                howToPlay: 'اختر سلاحك، انضم لفريقك، وسيطر على الخريطة في معارك سريعة',
+                howToPlayEn: 'Choose your weapon, join your team, and dominate the map in fast-paced battles'
+            },
+            minecraft: {
+                title: 'Minecraft',
+                titleEn: 'Minecraft',
+                image: 'https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/logos/Global-Header_MCCB-Logo_300x51.svg',
+                players: '1-∞ لاعب',
+                playersEn: '1-∞ Players',
+                mode: 'Survival، Creative، Multiplayer',
+                modeEn: 'Survival, Creative, Multiplayer',
+                description: 'ابني عالمك الخاص! استكشف، اجمع الموارد، وابني إبداعاتك اللانهائية',
+                descriptionEn: 'Build your own world! Explore, gather resources, and build your endless creations',
+                howToPlay: 'في Survival: ابقَ حياً واجمع موارد. في Creative: ابني بحرية بلا حدود',
+                howToPlayEn: 'In Survival: Stay alive and gather resources. In Creative: Build freely without limits'
+            },
+            ark: {
+                title: 'ARK: Survival Evolved',
+                titleEn: 'ARK: Survival Evolved',
+                image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/346110/header.jpg',
+                players: '1-70 لاعب',
+                playersEn: '1-70 Players',
+                mode: 'Survival، Taming، PvP/PvE',
+                modeEn: 'Survival, Taming, PvP/PvE',
+                description: 'عش في عالم الديناصورات! روّضهم، ابني قاعدتك، وحارب من أجل البقاء',
+                descriptionEn: 'Live in the world of dinosaurs! Tame them, build your base, and fight to survive',
+                howToPlay: 'اجمع موارد، روّض ديناصورات، وكوّن قبيلتك للسيطرة على الجزيرة',
+                howToPlayEn: 'Gather resources, tame dinosaurs, and form your tribe to dominate the island'
+            },
+            rust: {
+                title: 'Rust',
+                titleEn: 'Rust',
+                image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/252490/header.jpg',
+                players: '1-200 لاعب',
+                playersEn: '1-200 Players',
+                mode: 'Survival PvP',
+                modeEn: 'Survival PvP',
+                description: 'البقاء للأقوى! ابني قاعدتك ودافع عنها ضد لاعبين آخرين في عالم قاسٍ',
+                descriptionEn: 'Survival of the fittest! Build your base and defend it against other players in a harsh world',
+                howToPlay: 'اجمع موارد، ابني حصنك، وكوّن تحالفات للبقاء في هذا العالم الوحشي',
+                howToPlayEn: 'Gather resources, build your fortress, and form alliances to survive in this brutal world'
+            },
+            satisfactory: {
+                title: 'Satisfactory',
+                titleEn: 'Satisfactory',
+                image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/526870/header.jpg',
+                players: '1-4 لاعبين',
+                playersEn: '1-4 Players',
+                mode: 'Factory Building، Co-op',
+                modeEn: 'Factory Building, Co-op',
+                description: 'ابني مصانع ضخمة وأنظمة إنتاج معقدة في عالم ثلاثي الأبعاد جميل',
+                descriptionEn: 'Build massive factories and complex production systems in a beautiful 3D world',
+                howToPlay: 'استخرج موارد، صمم خطوط إنتاج، وأتمت كل شيء لمصنع مثالي',
+                howToPlayEn: 'Extract resources, design production lines, and automate everything for the perfect factory'
+            },
+            tekken: {
+                title: 'Tekken 7 & 8',
+                titleEn: 'Tekken 7 & 8',
+                image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/1778820/header.jpg',
+                players: '1v1، 2v2',
+                playersEn: '1v1, 2v2',
+                mode: 'Fighting Game',
+                modeEn: 'Fighting Game',
+                description: 'أسطورة ألعاب القتال! قاتل بشخصيات مميزة وحركات احترافية',
+                descriptionEn: 'Fighting game legend! Fight with unique characters and professional moves',
+                howToPlay: 'تعلم الكومبوهات، تدرب على الحركات، وواجه خصومك في معارك ملحمية',
+                howToPlayEn: 'Learn combos, practice moves, and face your opponents in epic battles'
+            },
+            amongus: {
+                title: 'Among Us',
+                titleEn: 'Among Us',
+                image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/945360/header.jpg',
+                players: '4-15 لاعب',
+                playersEn: '4-15 Players',
+                mode: 'Social Deduction',
+                modeEn: 'Social Deduction',
+                description: 'من هو المحتال؟ تعاون مع الطاقم أو خدعهم كمحتال!',
+                descriptionEn: 'Who is the impostor? Cooperate with the crew or deceive them as an impostor!',
+                howToPlay: 'كطاقم: أكمل المهام واكتشف المحتال. كمحتال: تخلص من الطاقم دون أن يكتشفوك',
+                howToPlayEn: 'As crew: Complete tasks and find the impostor. As impostor: Eliminate crew without being caught'
+            },
+            vrchat: {
+                title: 'VRChat',
+                titleEn: 'VRChat',
+                image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/438100/header.jpg',
+                players: '1-∞ لاعب',
+                playersEn: '1-∞ Players',
+                mode: 'Social VR',
+                modeEn: 'Social VR',
+                description: 'عالم اجتماعي افتراضي! كن أي شخصية واستكشف عوالم لانهائية',
+                descriptionEn: 'Virtual social world! Be any character and explore endless worlds',
+                howToPlay: 'ادخل بنظارة VR أو بدونها، اختر أفاتارك، واستكشف عوالم اللاعبين',
+                howToPlayEn: 'Enter with VR headset or without, choose your avatar, and explore player worlds'
+            },
+            darkpictures: {
+                title: 'The Dark Pictures',
+                titleEn: 'The Dark Pictures',
+                image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/939850/header.jpg',
+                players: '1-2 لاعب (Co-op)',
+                playersEn: '1-2 Players (Co-op)',
+                mode: 'Horror Story، Choice-Based',
+                modeEn: 'Horror Story, Choice-Based',
+                description: 'قصص رعب سينمائية! اختياراتك تحدد مصير الشخصيات',
+                descriptionEn: 'Cinematic horror stories! Your choices determine the fate of characters',
+                howToPlay: 'اتخذ قرارات صعبة، حل الألغاز، وحاول إبقاء الجميع على قيد الحياة',
+                howToPlayEn: 'Make tough decisions, solve puzzles, and try to keep everyone alive'
+            },
+            fnaf: {
+                title: 'Five Nights at Freddy\'s',
+                titleEn: 'Five Nights at Freddy\'s',
+                image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/319510/header.jpg',
+                players: '1 لاعب',
+                playersEn: '1 Player',
+                mode: 'Horror Survival',
+                modeEn: 'Horror Survival',
+                description: 'اصمد 5 ليالٍ في مطعم بيتزا مسكون! راقب الكاميرات وأغلق الأبواب',
+                descriptionEn: 'Survive 5 nights in a haunted pizza restaurant! Watch cameras and close doors',
+                howToPlay: 'راقب الأنيماترونيكس من الكاميرات، وفّر الطاقة، واصمد حتى الصباح',
+                howToPlayEn: 'Monitor animatronics from cameras, save power, and survive until morning'
+            },
+            battlefield: {
+                title: 'Battlefield 2042',
+                titleEn: 'Battlefield 2042',
+                image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/1517290/header.jpg',
+                players: 'حتى 128 لاعب',
+                playersEn: 'Up to 128 Players',
+                mode: 'FPS Multiplayer، Large-Scale Warfare',
+                modeEn: 'FPS Multiplayer, Large-Scale Warfare',
+                description: 'حروب ضخمة في ساحات معارك واسعة! دبابات، طائرات، ومعارك ملحمية',
+                descriptionEn: 'Massive wars in huge battlefields! Tanks, planes, and epic battles',
+                howToPlay: 'انضم لفريقك، اختر صنفك، واستخدم المركبات للسيطرة على الأهداف',
+                howToPlayEn: 'Join your team, choose your class, and use vehicles to control objectives'
+            },
+            readyornot: {
+                title: 'Ready or Not',
+                titleEn: 'Ready or Not',
+                image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/1144200/header.jpg',
+                players: '1-5 لاعبين',
+                playersEn: '1-5 Players',
+                mode: 'Tactical FPS، SWAT Simulation',
+                modeEn: 'Tactical FPS, SWAT Simulation',
+                description: 'محاكاة واقعية لفرق SWAT! خطط، نفذ، وأنقذ الرهائن في عمليات تكتيكية',
+                descriptionEn: 'Realistic SWAT simulation! Plan, execute, and rescue hostages in tactical operations',
+                howToPlay: 'كوّن فريق SWAT، خطط لعمليتك، واستخدم التكتيكات لإنقاذ الرهائن',
+                howToPlayEn: 'Form a SWAT team, plan your operation, and use tactics to rescue hostages'
+            }
+        };
+        
+        // Show Game Details Modal
+        function showGameDetails(gameId) {
+            const game = gamesData[gameId];
+            if (!game) return;
+            
+            const modal = document.getElementById('gameModal');
+            const title = document.getElementById('modalGameTitle');
+            const body = document.getElementById('modalGameBody');
+            const currentLang = document.documentElement.getAttribute('lang');
+            
+            // Set title based on language
+            title.textContent = currentLang === 'ar' ? game.title : game.titleEn;
+            
+            // Create modal content
+            const content = `
+                <img src="${game.image}" alt="${currentLang === 'ar' ? game.title : game.titleEn}">
+                <div class="game-detail-item">
+                    <strong>${currentLang === 'ar' ? '👥 عدد اللاعبين:' : '👥 Players:'}</strong>
+                    <p>${currentLang === 'ar' ? game.players : game.playersEn}</p>
+                </div>
+                <div class="game-detail-item">
+                    <strong>${currentLang === 'ar' ? '🎮 نوع اللعبة:' : '🎮 Game Mode:'}</strong>
+                    <p>${currentLang === 'ar' ? game.mode : game.modeEn}</p>
+                </div>
+                <div class="game-detail-item">
+                    <strong>${currentLang === 'ar' ? '📝 الوصف:' : '📝 Description:'}</strong>
+                    <p>${currentLang === 'ar' ? game.description : game.descriptionEn}</p>
+                </div>
+                <div class="game-detail-item">
+                    <strong>${currentLang === 'ar' ? '🕹️ طريقة اللعب:' : '🕹️ How to Play:'}</strong>
+                    <p>${currentLang === 'ar' ? game.howToPlay : game.howToPlayEn}</p>
+                </div>
+            `;
+            
+            body.innerHTML = content;
+            modal.style.display = 'block';
+        }
+        
+        // Close Modal
+        function closeModal() {
+            document.getElementById('gameModal').style.display = 'none';
+        }
+        
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('gameModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+        
+        // Theme Toggle Function
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const themeIcon = document.getElementById('themeIcon');
+            
+            if (currentTheme === 'light') {
+                html.removeAttribute('data-theme');
+                themeIcon.textContent = '🌙';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '☀️';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+        
+        // Load saved theme
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme');
+            const themeIcon = document.getElementById('themeIcon');
+            
+            if (savedTheme === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '☀️';
+            }
+        });
+        
+        // Language Toggle Function
+        function toggleLanguage() {
+            const html = document.documentElement;
+            const currentLang = html.getAttribute('lang');
+            const langText = document.getElementById('langText');
+            
+            if (currentLang === 'ar') {
+                // Switch to English
+                html.setAttribute('lang', 'en');
+                html.setAttribute('dir', 'ltr');
+                langText.textContent = 'ع';
+                
+                // Update all elements with data-en attribute
+                document.querySelectorAll('[data-en]').forEach(el => {
+                    el.textContent = el.getAttribute('data-en');
+                });
+                
+                localStorage.setItem('language', 'en');
+            } else {
+                // Switch to Arabic
+                html.setAttribute('lang', 'ar');
+                html.setAttribute('dir', 'rtl');
+                langText.textContent = 'EN';
+                
+                // Update all elements with data-ar attribute
+                document.querySelectorAll('[data-ar]').forEach(el => {
+                    el.textContent = el.getAttribute('data-ar');
+                });
+                
+                localStorage.setItem('language', 'ar');
+            }
+        }
+        
+        // Load saved language
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('language');
+            
+            if (savedLang === 'en') {
+                const html = document.documentElement;
+                html.setAttribute('lang', 'en');
+                html.setAttribute('dir', 'ltr');
+                document.getElementById('langText').textContent = 'ع';
+                
+                document.querySelectorAll('[data-en]').forEach(el => {
+                    el.textContent = el.getAttribute('data-en');
+                });
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
